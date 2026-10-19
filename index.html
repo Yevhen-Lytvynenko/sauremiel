@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sauremiel — digital portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&family=IM+Fell+French+Canon+SC&family=Italianno&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="top">
+    <nav class="nav" aria-label="Main">
+      <a class="nav__link is-active" href="#about" aria-current="page">About me</a>
+      <a class="nav__link" href="#gallery">Gallery</a>
+      <a class="nav__link" href="#services">Services</a>
+      <a class="nav__link" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="about">
+    <img class="hero__bg" src="assets/banner.png" alt="">
+    <img class="hero__line hero__line--top" src="assets/divider-title.svg" alt="">
+    <h1 class="hero__title">SAUREMIEL</h1>
+    <p class="hero__sub">digital portfolio</p>
+    <img class="hero__line hero__line--bottom" src="assets/divider-title.svg" alt="">
+  </section>
+
+  <section class="info">
+    <div class="info__inner">
+
+      <div class="skills-col">
+        <div class="skills">
+          <h2 class="skills__title">Skills</h2>
+          <img class="skills__line" src="assets/divider-skills.svg" alt="">
+          <ul class="skills__tags">
+            <li class="tag">Digital Design</li>
+            <li class="tag">Illustration</li>
+            <li class="tag">Concept Art</li>
+            <li class="tag">Game Assets</li>
+          </ul>
+        </div>
+        <img class="software" src="assets/software.svg" alt="Software I use">
+      </div>
+
+      <ul class="links">
+        <li><a class="pill" href="#" target="_blank" rel="noopener"><span class="pill__icon"><img src="assets/instagram.svg" alt=""></span><span class="pill__text">Instagram</span></a></li>
+        <li><a class="pill" href="#" target="_blank" rel="noopener"><span class="pill__icon"><img src="assets/artstation.svg" alt=""></span><span class="pill__text">ArtStation</span></a></li>
+        <li><a class="pill" href="#" target="_blank" rel="noopener"><span class="pill__icon"><img src="assets/telegram.svg" alt=""></span><span class="pill__text">Telegram</span></a></li>
+        <li><a class="pill" href="#" target="_blank" rel="noopener"><span class="pill__icon"><img src="assets/tiktok.svg" alt=""></span><span class="pill__text">TikTok</span></a></li>
+        <li><a class="pill" href="#" target="_blank" rel="noopener"><span class="pill__icon"><img src="assets/twitter.svg" alt=""></span><span class="pill__text">Twitter</span></a></li>
+        <li><a class="pill" href="#" target="_blank" rel="noopener"><span class="pill__icon pill__icon--mask"><img src="assets/pinterest.svg" alt=""></span><span class="pill__text">Pinterest</span></a></li>
+        <li><a class="pill" href="#" target="_blank" rel="noopener"><span class="pill__icon"><img src="assets/deviantart.svg" alt=""></span><span class="pill__text">DeviantArt</span></a></li>
+        <li><a class="pill" href="#" target="_blank" rel="noopener"><span class="pill__icon"><img src="assets/bluesky.svg" alt=""></span><span class="pill__text">BlueSky</span></a></li>
+      </ul>
+
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <h2 class="gallery__title">GALLERY</h2>
+    <a class="more" href="#">View More <img src="assets/line-arrow.svg" alt=""></a>
+
+    <button class="arrow arrow--prev" type="button" aria-label="Previous"><img src="assets/arrow-prev.svg" alt=""></button>
+    <div class="gallery__track" id="track">
+      <a class="card" href="#"><img src="assets/gallery-1.png" alt="Gallery artwork 1"></a>
+      <a class="card" href="#"><img src="assets/gallery-2.png" alt="Gallery artwork 2"></a>
+      <a class="card" href="#"><img src="assets/gallery-3.png" alt="Gallery artwork 3"></a>
+    </div>
+    <button class="arrow arrow--next" type="button" aria-label="Next"><img src="assets/arrow-next.svg" alt=""></button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
