@@ -33,18 +33,25 @@ button { font: inherit; border: 0; background: none; cursor: pointer; }
    поэтому при любой ширине колонки пропорции совпадают с макетом 1:1.
    --s — масштаб конкретного блока: на десктопе = --u, на телефоне свой. */
 .page {
+  --fade: clamp(24px, 3.5vw, 72px);
   width: 70%;
   max-width: 1920px;
-  margin-inline: auto;
-  min-height: 100vh;
-  min-height: 100dvh;
+  margin: clamp(48px, 10vh, 140px) auto;
   background: var(--bg);
   container: page / inline-size;
   --u: calc(100cqw / 1440);
   --m: calc(100cqw / 390);
+  -webkit-mask-image:
+    linear-gradient(to right, transparent, #000 var(--fade), #000 calc(100% - var(--fade)), transparent),
+    linear-gradient(to bottom, transparent, #000 var(--fade), #000 calc(100% - var(--fade)), transparent);
+  -webkit-mask-composite: source-in;
+  mask-image:
+    linear-gradient(to right, transparent, #000 var(--fade), #000 calc(100% - var(--fade)), transparent),
+    linear-gradient(to bottom, transparent, #000 var(--fade), #000 calc(100% - var(--fade)), transparent);
+  mask-composite: intersect;
 }
 @media (max-width: 1279px) { .page { width: 84%; } }
-@media (max-width: 899px)  { .page { width: 100%; } }
+@media (max-width: 899px)  { .page { width: 100%; --fade: 14px; margin-block: 32px; } }
 
 /* ---------- hero ---------- */
 .hero { --s: var(--u); position: relative; height: calc(480 * var(--s)); overflow: hidden; }
