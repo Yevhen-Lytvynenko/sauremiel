@@ -1,0 +1,16 @@
+# Инструменты для скриншотов/проверок — сайту не нужны.
+# package.json не публикуем: иначе Vercel начнёт ставить puppeteer (качает целый Chrome).
+node_modules/
+package.json
+package-lock.json
+screenshot.mjs
+.shots/
+.tmp-check/
+
+# Системный мусор
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Локальные настройки Vercel
+.vercel/
